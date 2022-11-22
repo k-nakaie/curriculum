@@ -1,0 +1,125 @@
+.clearfix::after { 
+    content: '';
+    display: block; 
+    clear: both;
+}
+
+
+.header {
+    margin: 0;
+    width: 400px;
+    height: 100px;
+    background-color: #141f40;
+}
+.up-inner {
+    position: relative;
+    top: 20px;
+    right: 20px;
+    width: 160px;
+    height: 60px;
+    background-color: white;
+    float: right;
+}
+.up-inner-left {
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+    background-color: #a9004b;
+    float: left;
+}
+.up-inner-center {
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+    background-color: #a9004b;
+    float: left;
+}
+.up-inner-right {
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+    background-color: #a9004b;
+    float: left;
+}
+.main {
+    margin: 0;
+    width: 400px;
+    height: 250px;
+    background-color: red;
+}
+.left {
+    margin: 0;
+    width: 150px;
+    height: 250px;
+    background-color: #80bfa8;
+    float: left;
+}
+.right {
+    margin: 0;
+    width: 250px;
+    height: 250px;
+    background-color: #8c2727;
+    float: left;
+}
+.right-inner-up {
+    margin: 40px 60px auto 40px;
+    width: 150px;
+    height: 50px;
+    background-color: #ff863f;
+    border: solid 5px white;
+    
+    
+}
+/* .right-inner-up-in {
+    position: relative;
+    top: 5px;
+    left: 5px;
+    width: 140px;
+    height: 40px;
+    background-color: #ff863f;
+} */
+.right-inner-center {
+    margin: 10px 60px auto 40px;
+    width: 150px;
+    height: 50px;
+    background-color: #ff863f;
+    border: solid 5px white;
+}
+/* .right-inner-center-in {
+    position: relative;
+    top: 5px;
+    left: 5px;
+    width: 140px;
+    height: 40px;
+    background-color: #ff863f;
+} */
+.right-inner-down {
+    margin: 10px 60px auto 40px;
+    width: 150px;
+    height: 50px;
+    background-color: #ff863f;
+    border: solid 5px white;
+    
+}
+/* .right-inner-down-in {
+    position: relative;
+    top: 5px;
+    left: 5px;
+    width: 140px;
+    height: 40px;
+    background-color: #ff863f;
+} */
+.footer {
+    margin: 0;
+    width: 400px;
+    height: 100px;
+    background-color: #d98d30;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
