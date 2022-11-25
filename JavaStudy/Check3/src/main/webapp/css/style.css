@@ -1,0 +1,34 @@
+@charset "UTF-8";
+.footer {
+	
+background-color: gray;
+
+display: inline-block;
+padding: 10px;
+color: white;
+width: 500px;
+}
+
+.header {
+	background-color: gray;
+	display: inline-block;
+padding: 10px;
+color: white;
+padding: 10px;
+font-size: 10px;
+width: 500px;
+}
+
+.jspTest {
+	padding-top: 50px;
+padding-bottom: 50px;
+}
+.name {
+	border: solid 1px black;
+	width: 200px;
+	
+}
+.ID {
+	border: solid 1px black;
+	width: 200px;
+}
