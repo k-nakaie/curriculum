@@ -28,23 +28,23 @@ where store_code = 'EA01');
 -- [回答]
  insert into goods_table(
 goods_code, goods_name, price, update_day)
-values ('M001', 'マフラー', 4500, '2022/11/27');
+values ('M001', 'マフラー', 4500, current_date);
  
 -- 7. 在庫テーブルの商品コード='S987'、かつ、店舗コード='EA01'に対して、「在庫数=10、更新日付=本日日付」で更新しなさい。※実行後のSELECT結果も貼付すること。
 -- [回答]
  update stock_table
-set quantity = 10,update_day = '2022/11/27'
+set quantity = 10,update_day = current_date
 where goods_code = 'S987' and store_code = 'EA01';
- 
+
 -- 8. 7で更新した商品を削除しなさい。※実行後のSELECT結果も貼付すること。
 -- [回答]
 delete from goods_table
 where goods_code =
 (select goods_code from stock_table
-where update_day = '2022/11/27');
+where update_day = current_date);
 
 
 delete from stock_table
 where goods_code =
 (select goods_code from stock_table
-where update_day = '2022/11/27')
+where update_day = current_date);
