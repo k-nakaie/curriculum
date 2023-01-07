@@ -1,0 +1,13 @@
+2023-01-07 13:24:35,881 [Worker-8: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2023-01-07 13:36:10,180 [Worker-13: Maven プロジェクト構成の更新] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2023-01-07 13:36:12,349 [Worker-13: Maven プロジェクト構成の更新] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.example:demo:0.0.1-SNAPSHOT @ /Users/nakaiekengo/LetsEngineer/curriculum/JavaStudy/demo/pom.xml.
+2023-01-07 13:36:14,014 [Worker-13: Maven プロジェクト構成の更新] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /demo/src/main/java
+2023-01-07 13:36:14,017 [Worker-13: Maven プロジェクト構成の更新] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /demo/src/main/resources
+2023-01-07 13:36:14,019 [Worker-13: Maven プロジェクト構成の更新] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /demo/src/main/resources
+2023-01-07 13:36:14,020 [Worker-13: Maven プロジェクト構成の更新] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /demo/src/test/java
+2023-01-07 13:36:15,489 [Worker-13: Maven プロジェクト構成の更新] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 5 sec
+2023-01-07 13:36:18,175 [Worker-15: ビルド] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-01-07 13:36:18,185 [Worker-15: ビルド] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-01-07 13:36:18,201 [Worker-15: ビルド] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2023-01-07 13:36:18,231 [Worker-15: ビルド] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-01-07 13:36:18,231 [Worker-15: ビルド] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nakaiekengo/LetsEngineer/curriculum/JavaStudy/demo/src/test/resources
