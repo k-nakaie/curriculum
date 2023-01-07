@@ -16,7 +16,7 @@ public final class EmployeeBean {
     /** ・パスワード */
     private String _password;
     /** ・名前 */
-     private String _name;
+    private String _name;
     /** ・メールアドレス */
     private String _mail;
     /** ・得意言語 or 学習中の言語 */
@@ -118,7 +118,7 @@ public final class EmployeeBean {
     }
 
     /**
-     * @param mail <pre>セットするStringクラスのメールアドレス</pre>
+     * @param name <pre>セットするStringクラスの氏名</pre>
      */
     public void setMail(String mail) {
         this._mail = mail;
@@ -164,13 +164,6 @@ public final class EmployeeBean {
     public String getDeleteFlg() {
         return _deleteFlg;
     }
-
-	public String get_name() {
-		return _name;
-	}
-
-	public void set_name(String _name) {
-		this._name = _name;
-	}
-
+    
+    
 }

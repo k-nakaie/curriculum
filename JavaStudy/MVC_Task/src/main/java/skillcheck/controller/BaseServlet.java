@@ -12,6 +12,7 @@ import javax.servlet.http.HttpSession;
 import skillcheck.bean.EmployeeBean;
 import skillcheck.bean.ResponseBean;
 import skillcheck.constant.ConstMessage;
+import skillcheck.dao.EmployeeDao.ExecuteCase;
 import skillcheck.exception.MVCException;
 import skillcheck.logger.Logger;
 import skillcheck.service.EmployeeManagementService;
@@ -150,6 +151,10 @@ public abstract class BaseServlet extends HttpServlet {
             // Tips2: 完全一致検索の社員情報取得を呼び出すこと
             // Tips3: 第二引数の渡し方に注意すること
             // ←ここへ記述
+            EmployeeBean bean = new EmployeeBean();
+            bean.setEmpId(reqEmpId);
+            bean.setPassword(reqPassword);
+        	responseBean= ems.getEmployeeData(ExecuteCase.FIND_BY_EMPID,bean);
 
             // 最初の1件を取得
             resEmployeeBean = responseBean.getEmplyeeBeanList().stream().findFirst().orElse(null);
