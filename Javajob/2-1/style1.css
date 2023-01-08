@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper{
+    margin: 0;
+    width: 400px;
+}
+
+.header{
+    margin: 0;
+    height: 100px;
+    background-color: #141f40;
+}
+
+
+.center{
+    margin: 0;
+    height: 250px;
+}
+
+.left{
+    margin: 0;
+    height: 250px;
+    width: 150px;
+    background-color: #80bfa8;
+    float: left;
+}
+
+.right{
+    margin: 0;
+    height: 250px;
+    width: 250px;
+    background-color: #8c2727;
+    float: right;
+} 
+
+.footer{
+    margin: 0;
+    height: 100px;
+    background-color: #d98d30;
+}
