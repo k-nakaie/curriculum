@@ -1,0 +1,5 @@
+package skillcheck.controller;
+
+public class BaseServlet {
+
+}

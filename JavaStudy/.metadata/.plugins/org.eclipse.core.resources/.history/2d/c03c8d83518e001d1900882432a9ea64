@@ -1,0 +1,5 @@
+package skillcheck.logger;
+
+public class Logger {
+
+}

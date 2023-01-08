@@ -1,0 +1,5 @@
+package skillcheck.util;
+
+public class RequestTypeUtil {
+
+}

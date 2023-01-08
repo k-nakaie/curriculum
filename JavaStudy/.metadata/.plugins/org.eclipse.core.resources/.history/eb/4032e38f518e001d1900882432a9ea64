@@ -1,0 +1,5 @@
+package skillcheck.exception;
+
+public class MVCException {
+
+}
