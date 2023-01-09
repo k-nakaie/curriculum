@@ -1,0 +1,28 @@
+package check;
+
+import constants.Constants;
+
+public class Main {
+	
+	//課題①firstName →　自分の名字　lastName →　自分の名前で初期化
+			private static  String  firstName = "KENGO";
+			private static String lastName = "NAKAIE";
+			
+//			課題②
+//			【Main.java】にてfirstNameとlastNameを引数で受け取って、
+//			連結して表示させるメソッド「printName」を作成しなさい。
+//			作成した関数のアクセス修飾子は「private」とする
+			private static void printName(String firstName, String lastName) {
+				
+				System.out.println(firstName + lastName);
+			}
+
+	public static void main(String[] args) {
+		// TODO 自動生成されたメソッド・スタブ	
+		printName(firstName,lastName);
+		
+		Pet pet = new Pet(Constants.CHECK_CLASS_JAVA, Constants.CHECK_CLASS_HOGE);
+		
+	}
+
+}

@@ -1,0 +1,16 @@
+package check;
+
+public class Main {
+	
+	//課題①firstName →　自分の名字　lastName →　自分の名前で初期化
+			private String  firstName = "KENGO";
+			private String lastName = "NAKAIE";
+
+	public static void main(String[] args) {
+		// TODO 自動生成されたメソッド・スタブ
+		//課題①firstName →　自分の名字　lastName →　自分の名前で初期化
+		
+
+	}
+
+}
