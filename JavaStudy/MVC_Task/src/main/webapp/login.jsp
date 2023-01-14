@@ -88,8 +88,8 @@
             <!-- 2. class属性と、適用するスタイルの記述-->
             <!-- Tips: common.cssより赤色の文字色を定義しているスタイルを確認 -->
             <!-- [ここへ記述] -->
-            <label for="error-label"></label>
-            <input id="error-label" type="text" name="error-label">
+            <label for="error-label"><%= message %></label>
+            <!--  <input id="error-label" type="text" name="error-label">-->
             <br>
         <% } %>
         <!-- FIXME Step-1-3: actionに送信先URIを記述しなさい。 -->

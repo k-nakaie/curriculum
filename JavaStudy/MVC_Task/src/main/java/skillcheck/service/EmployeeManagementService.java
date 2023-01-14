@@ -1,6 +1,5 @@
 package skillcheck.service;
 
-import java.sql.PreparedStatement;
 import java.sql.ResultSetMetaData;
 import java.sql.SQLException;
 import java.util.ArrayList;
@@ -192,6 +191,7 @@ public final class EmployeeManagementService extends BaseService implements Empl
                 // Tips1: ループ文を使用すること（正解は複数パターンあります）
                 // Tips2: 格納先はローカル変数のempとすること
                 // [ここへ記述]
+            	//１件目の要素＝社員番号？それを引数にDBから引っ張る処理？
                 for(int i = 0 ; i < 1 ; i++) {
                     emp = pEmployeeBeanList.get(i);                   
                 }               
@@ -206,7 +206,7 @@ public final class EmployeeManagementService extends BaseService implements Empl
                     // 2. 1で作成したオブジェクトをpreparedStatementへ格納
                     // Tips: sbQueryは、sbQuery.toString()でStringへ変換
                     // [ここへ記述]
-                    PreparedStatement preparedStatement = connection.prepareStatement(sbQuery.toString());
+                    preparedStatement = connection.prepareStatement(sbQuery.toString());
                     
 
                     // LIKEを使用するため、パラメータを編集
@@ -217,7 +217,10 @@ public final class EmployeeManagementService extends BaseService implements Empl
                     // FIXME Step-5-6: preparedStatementに適切なパラメーターをセットしなさい。
                     // Tips: パラメータをセットするインデックスに注意
                     // [ここへ記述]
+                    
                     preparedStatement.setString(1, empId);
+                    //追加しました
+                    //preparedStatement.setString(2,emp.getPassword());
 
                     // FIXME Step-5-7: preparedStatementよりSQL(SELECT文)を実行し、resultSetへ結果を格納しなさい。
                     // [ここへ記述]
