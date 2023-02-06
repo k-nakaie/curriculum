@@ -1,0 +1,425 @@
+
+/* 共通設定 */
+/* 両サイドに余白があったので全体にmargin設定 */
+* {
+    margin: 0;
+    padding: auto;
+    /* 全体のフォント変えたければ設定 */
+    /* font-family: serif; */
+    /* 細字が日本語対応できないみたいでした */
+    font-weight: lighter;
+}
+
+.wrapper {
+    width: 1000px;
+    font-family: "YuGothic";
+    font-weight: 500;
+}
+
+.clearfix::after { 
+    content: '';
+    display: block; 
+    clear: both;
+}
+
+.back {
+    /* position: relative; */
+    width: 100%;
+    margin: 0;
+}
+
+
+/* -------------------------------- */
+/* ヘッダー部分 */
+.head {
+    display: flex;
+    /* width: 100%; */
+    height: 60px;
+    /* デバッグ用で色付け */
+    /* background-color: aquamarine; */
+    justify-content: space-between;
+    margin: 0 50px;
+}
+
+/* 親要素に対して相対的な大きさ設定 */
+.rogo {
+    position: relative;
+    width: 15%;
+    height: 30px;
+    margin-left: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    
+}
+
+/* ヘッダーメニューの設定 */
+.head ul {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    /* 冗長？① */
+    margin-right: 0;
+}
+
+.head a {
+    text-decoration: none;
+    color: black;
+}
+.head ul li {
+    margin-left: 30px;
+}
+
+/* -------------------------------- */
+/* ここからメイン */
+
+/* メインロゴ */
+/* ヘッダーと横幅が揃わなかったので
+親要素"section"を作成し、相対的大きさ設定 */
+.main_rogo {
+    /* position: relative; */
+    width: 900px;
+    margin: 0 50px;
+}
+
+/* 中央揃え */
+.toptext {
+    /* position: relative; */
+    width: 900px;
+    text-align: center;
+    margin: 40px 50px 0;
+
+}
+
+.toptext h1 {
+    font-weight: lighter;
+    font-size: 30px;
+    width: 100%;
+    margin: 0;
+}
+
+/* ここだけ強調 */
+.b-blow {
+    font-weight: bold;
+    font-size: 40px;
+    font-family: serif;
+}
+
+.toptext p {
+    line-height: 300%;
+    width: 100%;
+    margin: 0;
+}
+
+.box {
+    position: relative;
+    margin: 0;
+    /* 小要素のabsolute分高さ調整 */
+    height: 1250px;
+    width: 100%;
+}
+
+/* about以下 */
+.back_img1 {
+    position: absolute;
+    width: 100%;
+    
+}
+
+.textarea {
+    position:absolute;
+    text-align: center;
+    top: 50px;
+    align-items: center;
+    margin: 200px 50px auto;
+    width: 900px;
+}
+
+.textarea_1 {
+    margin-bottom: 30px;
+}
+
+.textarea_1 h1 {
+    margin-bottom: 0;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.area1_h2 {
+    margin: 0 auto 10px;
+    width: 100%;
+    justify-content: space-between;
+    /* align-items: center; */
+    text-align: justify;
+
+}
+.textarea_1 h2 {
+    margin-bottom: 20px;
+    font-size: 15px;
+    display: block;
+    width: 15%;
+    text-align-last: justify;    /* Chrome・Firefox用 */
+    text-justify: inter-ideograph;  /* IE・Edge用 */
+}
+
+.textarea_1 h3 {
+    margin: 0 auto 10px;
+    font-size: 30px;
+    text-align: center;
+    width: 80%;
+
+    
+}
+
+.textarea_1_1 {
+    position: relative;
+    display: flex;
+}
+
+/* .textarea p {
+    width: 55%;
+    line-height: 300%;
+    margin: 20px 0 20px 0;
+    text-align: left;
+} */
+
+
+.area1_p {
+    width: 55%;
+    line-height: 300%;
+    margin: 20px 0 20px 0;
+    text-align: left;
+}
+
+.img_samp {
+    position: absolute;
+    left: 55%;
+    display: block;
+    width: 45%;
+}
+
+.area1_p2 {
+    width: 55%;
+    line-height: 300%;
+    margin: 60px 20px 20px 0;
+    text-align: left;
+}
+
+/* ------------------------ */
+/* .b-blowが選ばれる４つの理由 */
+
+/* ４つの理由部分の枠 */
+.four {
+    margin: 250px 50px 0 50px;
+    width: 900px;
+}
+
+.four h4 {
+    font-size: 50px;
+    text-align: center;
+    margin: 0 20px;
+    text-align-last: justify; 
+}
+
+.four_blow {
+    font-size: 70px;
+    font-weight: bold;
+    font-family: serif;
+}
+
+.span_4 {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+
+.pair {
+    position: relative;
+    width: 100%;
+    display: flex;
+    margin-top: 50px;
+}
+
+.harf {
+    position: relative;
+    width: 50%;
+    margin: 0 10px;
+}
+
+.title {
+    text-align: center;
+    position: relative;
+    width: 100%;
+    /* margin-bottom: 10px; */
+    text-align: center;
+    height: 150px;
+
+}
+
+.h5 {
+    float: left;
+    position: absolute;
+    top: 50% ;
+    left: 0;
+    font-size: 30px;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    /* align-items: center; */
+}
+
+.num {
+    margin-right: 10px;
+    margin-left: 10px;
+    font-variant-numeric: tabular-nums;
+    font-variant-numeric: slashed-zero;
+}
+
+.reason {
+    text-align: center;
+    display: inline-block;
+    /* margin-left: auto;
+    margin-right: auto; */
+}
+
+.icon_base {
+    float: right;
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    align-items: center;
+    text-align: right;
+}
+
+.icon {
+    /* float: right; */
+    position: relative;
+    padding-right: 25%;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: inline-block;
+    /* line-height: 100%; */
+    
+}
+
+.kutu {
+    top: 25%;
+    position: relative;
+    padding-right: 10%;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: inline-block;
+    padding-top: 8%;
+
+}
+
+.reason_text {
+    text-align: left;
+    line-height: 300%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h6 {
+    font-weight: lighter;
+    font-size: 20px;
+    text-align: center;
+}
+
+.h6_under {
+    position: absolute;
+    /* top: 100px; */
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    
+}
+
+/* --------------------------------- */
+/* CUSTOMER REVIEWS */
+
+.textarea2 {
+    position:absolute;
+    text-align: center;
+    top: 50px;
+    align-items: center;
+    margin: 200px 50px auto;
+    width: 900px;
+}
+ 
+.textarea2_1 {
+    margin-bottom: 30px;
+    width: 100%;
+    position: relative;
+}
+
+
+
+
+.textarea2 h1 {
+    font-weight: bold;
+    font-size: 60px;
+    text-align: center;
+}
+
+.textarea2 h2 {
+    margin-bottom: 20px;
+    font-size: 15px;
+    display: block;
+    width: 30%;
+    text-align-last: justify;    /* Chrome・Firefox用 */
+    text-justify: inter-ideograph;  /* IE・Edge用 */
+}
+
+.area2_h2 {
+    margin: 0 auto 10px;
+    width: 100%;
+    justify-content: space-between;
+    /* align-items: center; */
+    text-align: justify;
+
+}
+
+.reviews {
+    margin-top: 30px;
+    position: relative;
+    width: 100%;
+    height: 250px;
+}
+
+.review {
+    position: absolute;
+    left: 0;
+    width: 60%;
+    z-index: 200;
+    /* display: inline-block; */
+}
+
+/* ４つ目だけ比率変更 */
+.review_4 {
+    position: absolute;
+    left: 0;
+    width: 70%;
+    z-index: 200;
+    /* display: inline-block; */
+}
+.reviews h1 {
+    font-weight: normal;
+    font-size: 25px;
+    text-align: left;
+}
+
+.reviews p {
+    text-align: left;
+    line-height: 250%;
+}
+
+.img_rev {
+    position: absolute;
+    right: 0;
+    z-index: 100;
+    width: 50%;
+    /* display: inline-block; */
+}
