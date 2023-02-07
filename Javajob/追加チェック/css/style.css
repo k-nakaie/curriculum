@@ -10,18 +10,21 @@
     font-weight: lighter;
 }
 
+/* 全体の横幅設定とフォント統一 */
 .wrapper {
     width: 1000px;
     font-family: "YuGothic";
     font-weight: 500;
 }
 
+/* フロート解除用 */
 .clearfix::after { 
     content: '';
     display: block; 
     clear: both;
 }
 
+/* 背景画像ありのセクション */
 .back {
     /* position: relative; */
     width: 100%;
@@ -140,31 +143,10 @@
     margin-bottom: 30px;
 }
 
-.textarea_1 h1 {
-    margin-bottom: 0;
-    font-size: 50px;
-    font-weight: bold;
-}
 
-.area1_h2 {
-    margin: 0 auto 10px;
-    width: 100%;
-    justify-content: space-between;
-    /* align-items: center; */
-    text-align: justify;
-
-}
-.textarea_1 h2 {
-    margin-bottom: 20px;
-    font-size: 15px;
-    display: block;
-    width: 15%;
-    text-align-last: justify;    /* Chrome・Firefox用 */
-    text-justify: inter-ideograph;  /* IE・Edge用 */
-}
 
 .textarea_1 h3 {
-    margin: 0 auto 10px;
+    margin: 30px auto 10px;
     font-size: 30px;
     text-align: center;
     width: 80%;
@@ -215,7 +197,7 @@
     width: 900px;
 }
 
-.four h4 {
+h4 {
     font-size: 50px;
     text-align: center;
     margin: 0 20px;
@@ -349,38 +331,11 @@ h6 {
     width: 900px;
 }
  
-.textarea2_1 {
-    margin-bottom: 30px;
-    width: 100%;
-    position: relative;
-}
 
 
 
 
-.textarea2 h1 {
-    font-weight: bold;
-    font-size: 60px;
-    text-align: center;
-}
 
-.textarea2 h2 {
-    margin-bottom: 20px;
-    font-size: 15px;
-    display: block;
-    width: 30%;
-    text-align-last: justify;    /* Chrome・Firefox用 */
-    text-justify: inter-ideograph;  /* IE・Edge用 */
-}
-
-.area2_h2 {
-    margin: 0 auto 10px;
-    width: 100%;
-    justify-content: space-between;
-    /* align-items: center; */
-    text-align: justify;
-
-}
 
 .reviews {
     margin-top: 30px;
@@ -422,4 +377,102 @@ h6 {
     z-index: 100;
     width: 50%;
     /* display: inline-block; */
+}
+/* ---------------------------- */
+
+/* PRODUCTS */
+
+.products {
+    margin-top: 500px;
+    /* height: 100px; */
+    margin-left: 50px;
+    margin-right: 50px;
+
+}
+
+.coner {
+    align-items: center;
+    /* justify-content: space-between; */
+}
+
+.coner h1 {
+    font-weight: bold;
+    font-size: 60px;
+    text-align: center;
+}
+
+.coner_h2 {
+    margin: 0 auto;
+    width: 100%;
+    align-items: center;
+}
+
+.coner h2 {
+    font-size: 15px;
+    display: block;
+    width: 30%;
+    text-align: center;
+    letter-spacing: 2em;
+}
+
+.goods {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.goods_harf {
+    width: 43%;
+}
+
+.goods_det {
+    height: 400px;
+}
+.img_goods {
+    width: 387px;
+}
+
+.goods h1 {
+    font-size: 25px;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.goods_b {
+    margin: 0 30px;
+    font-size: 30px;
+}
+.kakaku {
+    text-align: center;
+    /* 小要素を親からはみ出させる */
+    margin: 0 calc(50% - 50vw) 20px;
+    width: 100vw;
+}
+
+.goods p {
+    line-height: 200%;
+}
+
+.online {
+    margin-top: 30px;
+    text-align: center;
+    border: solid 1px black;
+    height: 80px;
+    display: inline-block;
+    width: 100%;
+    line-height: 80px;
+    font-size: 20px;
+}
+
+.teiki {
+    margin-top: 30px;
+    margin-bottom: 100px;
+    text-align: center;
+    border: solid 1px black;
+    height: 80px;
+    display: inline-block;
+    width: 100%;
+    line-height: 80px;
+    font-size: 20px;
+    font-size: 30px;
 }
