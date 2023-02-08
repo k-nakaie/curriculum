@@ -476,3 +476,159 @@ h6 {
     font-size: 20px;
     font-size: 30px;
 }
+/* -----------------------------
+FAQ */
+
+.faq {
+    width: 900px;
+    margin: 30px 50px;
+}
+
+.coner_faq {
+    align-items: center;
+    /* justify-content: space-between; */
+    margin-bottom: 100px;
+}
+
+.coner_faq h1 {
+    font-weight: normal;
+    font-size: 25px;
+    text-align: center;
+}
+
+.faq_h1 {
+    font-size: 50px;
+    /* font-weight: bold; */
+}
+
+.coner_h2 {
+    margin: 0 auto;
+    width: 100%;
+    align-items: center;
+}
+
+.coner_faq h2 {
+    font-size: 15px;
+    display: block;
+    width: 30%;
+    text-align: center;
+    letter-spacing: 0.5em;
+}
+
+.qaset {
+    margin-bottom: 40px;
+
+}
+
+.qaset h3 {
+    background-color: #eee;
+    font-size: 30px;
+    font-weight: lighter;
+    margin-bottom: 10px;
+}
+
+.qaset p {
+    
+    line-height: 200%;
+}
+/* ------------------------------
+news */
+
+.news {
+    margin: 200px 100px;
+    width: 800px;
+}
+
+.news_row1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    margin-bottom: 10px;
+} 
+
+.news_row2 {
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+}
+
+.img_news {
+    width: 18%;
+    height: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center;
+}
+
+/* --------------------------------
+フッター */
+
+.footer {
+    /* width: 90%;
+    margin: 20px 50px; */
+    background-color: #eee;
+    display: flex;
+    position: relative;
+}
+
+.company {
+    text-align: left;
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+
+.company_0 {
+    margin-right: 30px;
+}
+
+.company h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.company p {
+    line-height: 200%;
+}
+
+.sns_0 {
+    position: absolute;
+    right: 0;
+    bottom: 20px;
+    display: flex;
+}
+
+.sns1 {
+    display: flex;
+    margin-right: 10px;
+    background-color: #1DA1F2;
+    border-radius: 10px;
+    color: white;
+    border: solid 1px #1DA1F2;
+    align-items: center;   
+    font-size: 25px;
+}
+
+.sns1 p {
+    margin: 5px 20px 5px 10px;
+}
+
+.sns1 img {
+    margin-left: 10px;
+}
+
+.sns2 {
+    display: flex;
+    background-color: black;
+    border-radius: 10px;
+    color: white; 
+    align-items: center; 
+    border: solid 1px black;
+    font-size: 25px;
+}
+
+.sns2 p {
+    margin: 5px 10px;
+}
