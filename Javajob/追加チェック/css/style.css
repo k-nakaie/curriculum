@@ -7,7 +7,7 @@
     /* 全体のフォント変えたければ設定 */
     /* font-family: serif; */
     /* 細字が日本語対応できないみたいでした */
-    font-weight: lighter;
+    font-weight: normal;
 }
 
 /* 全体の横幅設定とフォント統一 */
@@ -23,13 +23,117 @@
     display: block; 
     clear: both;
 }
+/* 自動スクロール対応 */
+html {
+    /* ブラウザによっては機能しない */
+    scroll-behavior: smooth;
+}
 
 /* 背景画像ありのセクション */
 .back {
-    /* position: relative; */
     width: 100%;
     margin: 0;
 }
+
+/* ----------------------------------- */
+/* みだし一覧 */
+
+/* .toptext  */
+h1 {
+    font-size: 30px;
+    text-align: center;
+}
+
+
+.coner h1 {
+    font-weight: bold;
+    font-size: 60px;
+}
+
+.reviews h1 {
+    text-align: left;
+}
+
+.goods h1 {
+    font-size: 25px;
+}
+
+/* conerクラスのh1とのセット使用 */
+h2 {
+    font-size: 15px;
+    display: block;
+    width: 30%;
+    text-align: center;
+    letter-spacing: 2em;
+}
+
+/* 文字感覚調整 */
+.coner_faq h2 {
+    letter-spacing: 0.5em;
+}
+
+h3 {
+    margin: 0 auto 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+
+.qaset h3 {
+    background-color: #eee;
+    margin: 0;
+    padding-left: 10px;
+    text-align: left;
+    box-sizing: border-box;
+
+}
+
+
+.company h3 {
+    text-align: left;
+    margin: 0 0 20px 0;
+    font-size: 20px;
+
+}
+
+h4 {
+    font-size: 50px;
+    text-align: center;
+    margin: 0 20px;
+    text-align-last: justify; 
+}
+
+
+h6 {
+    font-size: 20px;
+    text-align: center;
+}
+
+.h6_under {
+    position: absolute;
+    /* top: 100px; */
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+
+/* coner系：大文字と小文字の上下セットみだし */
+.coner {
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.coner_h2 {
+    margin: 0 auto;
+    width: 100%;
+    align-items: center;
+}
+
+
+
+
 
 
 /* -------------------------------- */
@@ -46,7 +150,6 @@
 
 /* 親要素に対して相対的な大きさ設定 */
 .rogo {
-    position: relative;
     width: 15%;
     height: 30px;
     margin-left: 0;
@@ -57,19 +160,40 @@
 
 /* ヘッダーメニューの設定 */
 .head ul {
-    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
     list-style: none;
-    /* 冗長？① */
     margin-right: 0;
 }
 
+/* ヘッドクラスのaタグ設定 */
 .head a {
     text-decoration: none;
     color: black;
+    /* ホバー時のアクション追加のため設定 */
+    position: relative;
 }
+
+/* ホバー時のaタグアクションの下準備 */
+.head a::after {
+    position: absolute;
+    content: '';
+    width: 0%;
+    left: 0;
+    bottom: -8px;
+    height: 3px;
+    transition: .3s;
+    background: #ddd
+    ;
+}
+/* ホバー時のaタグアクション */
+.head a:hover::after {
+    width: 100%;
+
+}
+
+/* リスト要素の感覚調整 */
 .head ul li {
     margin-left: 30px;
 }
@@ -78,29 +202,20 @@
 /* ここからメイン */
 
 /* メインロゴ */
-/* ヘッダーと横幅が揃わなかったので
-親要素"section"を作成し、相対的大きさ設定 */
+/* 幅変更にも対応しやすいように％で大きさ設定 */
 .main_rogo {
-    /* position: relative; */
-    width: 900px;
-    margin: 0 50px;
+    width: 90%;
+    margin: 0 5%;
 }
 
-/* 中央揃え */
+/* 冒頭コメント。横幅％指定と中央揃え */
 .toptext {
-    /* position: relative; */
-    width: 900px;
+    width: 90%;
     text-align: center;
-    margin: 40px 50px 0;
+    margin: 40px 5% 0;
 
 }
 
-.toptext h1 {
-    font-weight: lighter;
-    font-size: 30px;
-    width: 100%;
-    margin: 0;
-}
 
 /* ここだけ強調 */
 .b-blow {
@@ -109,12 +224,17 @@
     font-family: serif;
 }
 
+/* 行間を調整。間に2文字分が入る */
 .toptext p {
     line-height: 300%;
     width: 100%;
     margin: 0;
 }
 
+/* ----------------------------------
+ABOUT */
+
+/* 背景に画像を設定するための土台部分 */
 .box {
     position: relative;
     margin: 0;
@@ -123,35 +243,25 @@
     width: 100%;
 }
 
-/* about以下 */
+/* 背景画像を固定する */
 .back_img1 {
     position: absolute;
     width: 100%;
     
 }
-
+/* 背景の上に重なるように入力欄の要素作成 */
 .textarea {
     position:absolute;
     text-align: center;
     top: 50px;
     align-items: center;
-    margin: 200px 50px auto;
-    width: 900px;
+    margin: 200px 5% auto;
+    width: 90%;
 }
 
+/* 見だし・左テキスト右画像のセット */
 .textarea_1 {
     margin-bottom: 30px;
-}
-
-
-
-.textarea_1 h3 {
-    margin: 30px auto 10px;
-    font-size: 30px;
-    text-align: center;
-    width: 80%;
-
-    
 }
 
 .textarea_1_1 {
@@ -197,13 +307,6 @@
     width: 900px;
 }
 
-h4 {
-    font-size: 50px;
-    text-align: center;
-    margin: 0 20px;
-    text-align-last: justify; 
-}
-
 .four_blow {
     font-size: 70px;
     font-weight: bold;
@@ -239,7 +342,7 @@ h4 {
 
 }
 
-.h5 {
+.point {
     float: left;
     position: absolute;
     top: 50% ;
@@ -303,22 +406,6 @@ h4 {
     margin-bottom: 10px;
 }
 
-h6 {
-    font-weight: lighter;
-    font-size: 20px;
-    text-align: center;
-}
-
-.h6_under {
-    position: absolute;
-    /* top: 100px; */
-    margin-top: 80px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    
-}
-
 /* --------------------------------- */
 /* CUSTOMER REVIEWS */
 
@@ -331,12 +418,6 @@ h6 {
     width: 900px;
 }
  
-
-
-
-
-
-
 .reviews {
     margin-top: 30px;
     position: relative;
@@ -359,11 +440,6 @@ h6 {
     width: 70%;
     z-index: 200;
     /* display: inline-block; */
-}
-.reviews h1 {
-    font-weight: normal;
-    font-size: 25px;
-    text-align: left;
 }
 
 .reviews p {
@@ -390,31 +466,6 @@ h6 {
 
 }
 
-.coner {
-    align-items: center;
-    /* justify-content: space-between; */
-}
-
-.coner h1 {
-    font-weight: bold;
-    font-size: 60px;
-    text-align: center;
-}
-
-.coner_h2 {
-    margin: 0 auto;
-    width: 100%;
-    align-items: center;
-}
-
-.coner h2 {
-    font-size: 15px;
-    display: block;
-    width: 30%;
-    text-align: center;
-    letter-spacing: 2em;
-}
-
 .goods {
     display: flex;
     justify-content: space-between;
@@ -432,14 +483,8 @@ h6 {
     width: 387px;
 }
 
-.goods h1 {
-    font-size: 25px;
-    text-align: left;
-    margin-bottom: 10px;
-}
-
 .goods_b {
-    margin: 0 30px;
+    margin: 0 30px 0 auto;
     font-size: 30px;
 }
 .kakaku {
@@ -464,6 +509,12 @@ h6 {
     font-size: 20px;
 }
 
+.online:hover {
+    background-color: black;
+    color: white;
+    transition: 1s;
+}
+
 .teiki {
     margin-top: 30px;
     margin-bottom: 100px;
@@ -476,29 +527,29 @@ h6 {
     font-size: 20px;
     font-size: 30px;
 }
+
+.teiki:hover {
+    background-color: black;
+    color: yellow;
+    transition: 1s;
+}
+
+
 /* -----------------------------
 FAQ */
 
 .faq {
-    width: 900px;
-    margin: 30px 50px;
+    width: 90%;
+    margin: 30px 5%;
 }
 
 .coner_faq {
     align-items: center;
-    /* justify-content: space-between; */
     margin-bottom: 100px;
-}
-
-.coner_faq h1 {
-    font-weight: normal;
-    font-size: 25px;
-    text-align: center;
 }
 
 .faq_h1 {
     font-size: 50px;
-    /* font-weight: bold; */
 }
 
 .coner_h2 {
@@ -506,29 +557,11 @@ FAQ */
     width: 100%;
     align-items: center;
 }
-
-.coner_faq h2 {
-    font-size: 15px;
-    display: block;
-    width: 30%;
-    text-align: center;
-    letter-spacing: 0.5em;
-}
-
 .qaset {
     margin-bottom: 40px;
-
-}
-
-.qaset h3 {
-    background-color: #eee;
-    font-size: 30px;
-    font-weight: lighter;
-    margin-bottom: 10px;
 }
 
 .qaset p {
-    
     line-height: 200%;
 }
 /* ------------------------------
@@ -554,8 +587,24 @@ news */
     height: 40px;
 }
 
-.img_news {
+.news a {
     width: 18%;
+    /* height: 50px; */
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center;
+    display: inline-block;
+
+}
+
+/* 少し浮いて色が薄くなる */
+.news a:hover {
+    transform: translateY(-2px);
+    opacity: 0.7;
+}
+
+.img_news {
+    width: 80%;
     height: 100%;
     margin-top: auto;
     margin-bottom: auto;
@@ -584,11 +633,6 @@ news */
     margin-right: 30px;
 }
 
-.company h3 {
-    font-size: 30px;
-    margin-bottom: 20px;
-}
-
 .company p {
     line-height: 200%;
 }
@@ -611,6 +655,16 @@ news */
     font-size: 25px;
 }
 
+/* 少し浮いて色が薄くなる */
+.sns1:hover {
+    transform: translateY(-2px);
+    opacity: 0.7;
+}
+
+.sns_0 a {
+    text-decoration: none;
+}
+
 .sns1 p {
     margin: 5px 20px 5px 10px;
 }
@@ -627,6 +681,11 @@ news */
     align-items: center; 
     border: solid 1px black;
     font-size: 25px;
+}
+
+.sns2:hover {
+    transform: translateY(-2px);
+    opacity: 0.7;
 }
 
 .sns2 p {
