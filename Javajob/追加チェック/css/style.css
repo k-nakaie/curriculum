@@ -12,7 +12,7 @@
 
 /* 全体の横幅設定とフォント統一 */
 .wrapper {
-    width: 1000px;
+    width: 1280px;
     font-family: "YuGothic";
     font-weight: 500;
 }
@@ -35,33 +35,33 @@ html {
     margin: 0;
 }
 
+/* スマホ画面で改行する準備 */
+.sp_br {
+    display: none;
+}
+
 /* ----------------------------------- */
 /* みだし一覧 */
 
-/* .toptext  */
+/* header toptext,  */
 h1 {
-    font-size: 30px;
+    font-size: 200%;
     text-align: center;
 }
 
-
+/* conerクラスのh1・h2のセット使用 */
 .coner h1 {
-    font-weight: bold;
-    font-size: 60px;
+    font-size: 500%;
 }
 
+/* .textarea2 review */
 .reviews h1 {
     text-align: left;
 }
 
-.goods h1 {
-    font-size: 25px;
-}
-
-/* conerクラスのh1とのセット使用 */
+/* conerクラスのh1・h2のセット使用 */
 h2 {
-    font-size: 15px;
-    display: block;
+    font-size: 120%;
     width: 30%;
     text-align: center;
     letter-spacing: 2em;
@@ -72,52 +72,43 @@ h2 {
     letter-spacing: 0.5em;
 }
 
+/* .about testarea_1, */
 h3 {
     margin: 0 auto 20px;
-    font-size: 30px;
+    font-size: 250%;
     text-align: center;
 }
 
-
+/* .faq qaset */
 .qaset h3 {
     background-color: #eee;
     margin: 0;
     padding-left: 10px;
     text-align: left;
     box-sizing: border-box;
-
+    font-size: 200%;
 }
 
-
+/* .footer company */
 .company h3 {
     text-align: left;
-    margin: 0 0 20px 0;
-    font-size: 20px;
+    margin: 0 0 20px;
+    font-size: 200%;
 
 }
-
+/* .four, 選ばれる４つの理由 */
 h4 {
-    font-size: 50px;
+    font-size: 400%;
     text-align: center;
     margin: 0 20px;
     text-align-last: justify; 
 }
 
-
+/* .four harf */
 h6 {
-    font-size: 20px;
+    font-size: 150%;
     text-align: center;
 }
-
-.h6_under {
-    position: absolute;
-    /* top: 100px; */
-    margin-top: 80px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-}
-
 
 /* coner系：大文字と小文字の上下セットみだし */
 .coner {
@@ -141,17 +132,16 @@ h6 {
 .head {
     display: flex;
     /* width: 100%; */
-    height: 60px;
+    height: 100px;
     /* デバッグ用で色付け */
     /* background-color: aquamarine; */
     justify-content: space-between;
-    margin: 0 50px;
+    margin: 0 5%;
 }
 
 /* 親要素に対して相対的な大きさ設定 */
 .rogo {
     width: 15%;
-    height: 30px;
     margin-left: 0;
     margin-top: auto;
     margin-bottom: auto;
@@ -165,6 +155,7 @@ h6 {
     align-items: center;
     list-style: none;
     margin-right: 0;
+    width: 60%;
 }
 
 /* ヘッドクラスのaタグ設定 */
@@ -195,7 +186,7 @@ h6 {
 
 /* リスト要素の感覚調整 */
 .head ul li {
-    margin-left: 30px;
+    margin-left: 20px;
 }
 
 /* -------------------------------- */
@@ -220,7 +211,7 @@ h6 {
 /* ここだけ強調 */
 .b-blow {
     font-weight: bold;
-    font-size: 40px;
+    font-size: 130%;
     font-family: serif;
 }
 
@@ -239,7 +230,7 @@ ABOUT */
     position: relative;
     margin: 0;
     /* 小要素のabsolute分高さ調整 */
-    height: 1250px;
+    height: 1650px;
     width: 100%;
 }
 
@@ -249,6 +240,16 @@ ABOUT */
     width: 100%;
     
 }
+/* レスポンシブ用 */
+.back_img2 {
+    display: none;
+}
+
+/* レスポンシブ用 */
+.back_img3 {
+    display: none;
+}
+
 /* 背景の上に重なるように入力欄の要素作成 */
 .textarea {
     position:absolute;
@@ -269,18 +270,11 @@ ABOUT */
     display: flex;
 }
 
-/* .textarea p {
-    width: 55%;
-    line-height: 300%;
-    margin: 20px 0 20px 0;
-    text-align: left;
-} */
-
 
 .area1_p {
     width: 55%;
     line-height: 300%;
-    margin: 20px 0 20px 0;
+    margin: 20px 0;
     text-align: left;
 }
 
@@ -292,9 +286,9 @@ ABOUT */
 }
 
 .area1_p2 {
-    width: 55%;
+    width: 50%;
     line-height: 300%;
-    margin: 60px 20px 20px 0;
+    margin: 60px 0 20px;
     text-align: left;
 }
 
@@ -303,19 +297,18 @@ ABOUT */
 
 /* ４つの理由部分の枠 */
 .four {
-    margin: 250px 50px 0 50px;
-    width: 900px;
+    margin: 250px 5% 0;
+    width: 90%;
 }
 
 .four_blow {
-    font-size: 70px;
+    font-size: 130%;
     font-weight: bold;
     font-family: serif;
 }
 
 .span_4 {
-    font-size: 60px;
-    font-weight: bold;
+    font-size: 130%;
 }
 
 
@@ -332,14 +325,12 @@ ABOUT */
     margin: 0 10px;
 }
 
+/* 要件通りの上下調整できませんでした。 */
 .title {
     text-align: center;
     position: relative;
     width: 100%;
-    /* margin-bottom: 10px; */
-    text-align: center;
     height: 150px;
-
 }
 
 .point {
@@ -347,25 +338,22 @@ ABOUT */
     position: absolute;
     top: 50% ;
     left: 0;
-    font-size: 30px;
+    font-size: 250%;
     display: flex;
     width: 100%;
     height: 100%;
-    /* align-items: center; */
 }
 
 .num {
     margin-right: 10px;
     margin-left: 10px;
+    /* スラッシュゼロ対応。はみ出てしまいました・・ */
     font-variant-numeric: tabular-nums;
     font-variant-numeric: slashed-zero;
 }
 
 .reason {
     text-align: center;
-    display: inline-block;
-    /* margin-left: auto;
-    margin-right: auto; */
 }
 
 .icon_base {
@@ -378,13 +366,10 @@ ABOUT */
 }
 
 .icon {
-    /* float: right; */
     position: relative;
     padding-right: 25%;
     margin-top: auto;
     margin-bottom: auto;
-    display: inline-block;
-    /* line-height: 100%; */
     
 }
 
@@ -394,7 +379,6 @@ ABOUT */
     padding-right: 10%;
     margin-top: auto;
     margin-bottom: auto;
-    display: inline-block;
     padding-top: 8%;
 
 }
@@ -402,9 +386,25 @@ ABOUT */
 .reason_text {
     text-align: left;
     line-height: 300%;
-    margin-top: 10px;
+    margin-top: 60px;
     margin-bottom: 10px;
+    height: 200px;
 }
+
+.img_per {
+    margin: auto;
+    width: 100%;
+}
+
+.h6_under {
+    position: absolute;
+    /* top: 100px; */
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
 
 /* --------------------------------- */
 /* CUSTOMER REVIEWS */
@@ -412,17 +412,18 @@ ABOUT */
 .textarea2 {
     position:absolute;
     text-align: center;
-    top: 50px;
+    /* top: 50px; */
     align-items: center;
-    margin: 200px 50px auto;
-    width: 900px;
+    margin: 300px 5% auto;
+    width: 90%;
 }
  
 .reviews {
-    margin-top: 30px;
+    padding-top: 70px;
     position: relative;
     width: 100%;
-    height: 250px;
+    height: 300px;
+    padding-bottom: 30px;
 }
 
 .review {
@@ -437,9 +438,8 @@ ABOUT */
 .review_4 {
     position: absolute;
     left: 0;
-    width: 70%;
+    width:70%;
     z-index: 200;
-    /* display: inline-block; */
 }
 
 .reviews p {
@@ -459,10 +459,10 @@ ABOUT */
 /* PRODUCTS */
 
 .products {
-    margin-top: 500px;
+    margin-top: 520px;
     /* height: 100px; */
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 5%;
+    margin-right: 5%;
 
 }
 
@@ -480,12 +480,12 @@ ABOUT */
     height: 400px;
 }
 .img_goods {
-    width: 387px;
+    width: 100%;
 }
 
 .goods_b {
     margin: 0 30px 0 auto;
-    font-size: 30px;
+    font-size: 130%;
 }
 .kakaku {
     text-align: center;
@@ -506,7 +506,7 @@ ABOUT */
     display: inline-block;
     width: 100%;
     line-height: 80px;
-    font-size: 20px;
+    font-size: 200%;
 }
 
 .online:hover {
@@ -524,8 +524,7 @@ ABOUT */
     display: inline-block;
     width: 100%;
     line-height: 80px;
-    font-size: 20px;
-    font-size: 30px;
+    font-size: 250%;
 }
 
 .teiki:hover {
@@ -549,7 +548,7 @@ FAQ */
 }
 
 .faq_h1 {
-    font-size: 50px;
+    font-size: 200%;
 }
 
 .coner_h2 {
@@ -568,8 +567,8 @@ FAQ */
 news */
 
 .news {
-    margin: 200px 100px;
-    width: 800px;
+    margin: 200px 10%;
+    width: 80%;
 }
 
 .news_row1 {
@@ -625,7 +624,7 @@ news */
 .company {
     text-align: left;
     margin-top: 30px;
-    margin-left: 50px;
+    margin-left: 5%;
     margin-bottom: 20px;
 }
 
@@ -652,7 +651,7 @@ news */
     color: white;
     border: solid 1px #1DA1F2;
     align-items: center;   
-    font-size: 25px;
+    font-size: 150%;
 }
 
 /* 少し浮いて色が薄くなる */
@@ -680,7 +679,7 @@ news */
     color: white; 
     align-items: center; 
     border: solid 1px black;
-    font-size: 25px;
+    font-size: 150%;
 }
 
 .sns2:hover {

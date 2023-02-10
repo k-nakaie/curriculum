@@ -1,0 +1,192 @@
+@media screen and (max-width:375px) {
+    
+    .wrapper {
+        width: 375px;
+    }
+
+    p {
+        font-size: 70%;
+    }
+
+    .sp_br {
+        display: block;
+    }
+
+    /* -------------------------
+    見だし設定 */
+    
+/* header toptext,  */
+h1 {
+    font-size: 100%;
+}
+
+/* conerクラスのh1・h2のセット使用 */
+.coner h1 {
+    font-size: 200%;
+}
+
+
+/* conerクラスのh1・h2のセット使用 */
+h2 {
+    font-size: 50%;
+}
+
+/* .about testarea_1, */
+h3 {
+    margin: 0 auto 10px;
+    font-size: 100%;
+}
+
+/* .faq qaset */
+.qaset h3 {
+    background-color: #eee;
+    margin: 0;
+    padding-left: 10px;
+    text-align: left;
+    box-sizing: border-box;
+    font-size: 200%;
+}
+
+/* .footer company */
+.company h3 {
+    text-align: left;
+    margin: 0 0 20px;
+    font-size: 200%;
+
+}
+/* .four, 選ばれる４つの理由 */
+h4 {
+    font-size: 180%;
+}
+
+/* .four harf */
+h6 {
+    font-size: 100%;
+    text-align: center;
+}
+
+/* coner系：大文字と小文字の上下セットみだし */
+.coner {
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.coner_h2 {
+    margin: 0 auto;
+    width: 100%;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+    /* -----------------------
+    ヘッダー部分 */
+    .head {
+        height: 120px;
+    }
+    .rogo {
+        width: 40%;
+    }
+
+    .head ul {
+        display: block;
+        width: 60%;
+        padding: 0;
+        text-align: right;
+    }
+
+    .head ul li {
+        margin: 0;
+    }
+
+    /* ーーーーーーーーーーーーーーーーーーー
+    メインロゴ */
+    /* 変更なし */
+
+    /* --------------------------
+    about */
+
+    .box {
+        height: 1100px;
+    }
+
+    .back_img2 {
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 475px;
+    }
+    .back_img3 {
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 770px;
+    }
+
+    .textarea {
+        margin: 0  5%;
+        top: 60px;
+    }
+
+    .textarea_1_1 {
+        display: block;
+    }
+
+    .area1_p {
+        width: 100%;
+    }
+
+    .img_samp {
+        position: relative;
+        width: 100%;
+        margin: 0;
+        left: 0;
+
+    }
+
+
+.area1_p2 {
+        width: 100%;
+        margin: 30px 0 20px;
+    }
+
+/* -------------------------------
+４つの理由 */
+
+    .pair {
+        display: block;
+        margin-top: 20px;
+    }
+
+    .harf {
+        width: 100%;
+        margin: 0;
+    }
+
+    .title {
+        height: 100px;
+    }
+    /* .point {
+        top: 40%;
+    }
+ */
+    .icon {
+        padding-right: 15%;
+    }
+
+    .kutu {
+        padding-top: 5%;
+    }
+
+    /* --------------------------
+    customer reviews */
+
+    
+
+
+}
