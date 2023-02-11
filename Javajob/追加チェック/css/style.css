@@ -477,7 +477,6 @@ ABOUT */
     right: 0;
     z-index: 100;
     width: 60%;
-    /* display: inline-block; */
 }
 /* ---------------------------- */
 
@@ -613,7 +612,7 @@ ABOUT */
 }
  */
 .tag1 {
-    width: 40%;
+    width: 60%;
     font-size: 140%;
     
 }
