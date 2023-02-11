@@ -40,6 +40,10 @@ html {
     display: none;
 }
 
+/* 全体の文字調整 */
+p {
+    font-size: 120%;
+}
 /* ----------------------------------- */
 /* みだし一覧 */
 
@@ -106,8 +110,9 @@ h4 {
 
 /* .four harf */
 h6 {
-    font-size: 150%;
+    font-size: 180%;
     text-align: center;
+    padding-top: 20px;
 }
 
 /* coner系：大文字と小文字の上下セットみだし */
@@ -317,12 +322,12 @@ ABOUT */
     width: 100%;
     display: flex;
     margin-top: 50px;
+    justify-content: space-between;
 }
 
 .harf {
     position: relative;
-    width: 50%;
-    margin: 0 10px;
+    width: 48%;
 }
 
 /* 要件通りの上下調整できませんでした。 */
@@ -391,6 +396,11 @@ ABOUT */
     height: 200px;
 }
 
+.survey {
+    width: 90%;
+    margin: 20px auto;
+}
+
 .img_per {
     margin: auto;
     width: 100%;
@@ -399,22 +409,36 @@ ABOUT */
 .h6_under {
     position: absolute;
     /* top: 100px; */
-    margin-top: 80px;
+    margin-top: 60px;
     margin-left: auto;
     margin-right: auto;
-    width: 100%;
+    width: 90%;
 }
 
 
 /* --------------------------------- */
 /* CUSTOMER REVIEWS */
 
+/* レスポンシブ用 */
+.back_img4 {
+    display: none;
+}
+
+/* 背景に画像を設定するための土台部分 */
+.box2 {
+    position: relative;
+    margin: 0;
+    /* 小要素のabsolute分高さ調整 */
+    height: 1650px;
+    width: 100%;
+}
+
+/* 要素を入れるエリア */
 .textarea2 {
     position:absolute;
     text-align: center;
-    /* top: 50px; */
     align-items: center;
-    margin: 300px 5% auto;
+    margin: 280px 5% auto;
     width: 90%;
 }
  
@@ -445,13 +469,14 @@ ABOUT */
 .reviews p {
     text-align: left;
     line-height: 250%;
+    /* font-size: 120%; */
 }
 
 .img_rev {
     position: absolute;
     right: 0;
     z-index: 100;
-    width: 50%;
+    width: 60%;
     /* display: inline-block; */
 }
 /* ---------------------------- */
@@ -459,7 +484,7 @@ ABOUT */
 /* PRODUCTS */
 
 .products {
-    margin-top: 520px;
+    margin-top: 550px;
     /* height: 100px; */
     margin-left: 5%;
     margin-right: 5%;
@@ -503,37 +528,107 @@ ABOUT */
     text-align: center;
     border: solid 1px black;
     height: 80px;
-    display: inline-block;
     width: 100%;
     line-height: 80px;
     font-size: 200%;
 }
 
-.online:hover {
+.online a:hover {
     background-color: black;
     color: white;
     transition: 1s;
 }
 
-.teiki {
+/* .teiki {
     margin-top: 30px;
     margin-bottom: 100px;
     text-align: center;
     border: solid 1px black;
     height: 80px;
-    display: inline-block;
     width: 100%;
     line-height: 80px;
     font-size: 250%;
-}
-
+    list-style: none;
+    text-decoration: none;
+} */
+/* 
 .teiki:hover {
     background-color: black;
     color: yellow;
     transition: 1s;
+} */
+
+.products a {
+    text-decoration: none;
+    color: black;
+    display: block;
+} 
+
+/* .teiki a:hover {
+    background-color: black;
+    color: yellow;
+    transition: 1s;
+}  */
+
+/* -------------------------------
+定期購入フォーム */
+
+/* 背景に画像を設定するための土台部分 */
+.box3 {
+    position: relative;
+    margin: 0;
+    /* 小要素のabsolute分高さ調整 */
+    height: 1910px;
+    width: 100%;
 }
 
+/* 背景画像を固定する */
+.back_img5 {
+    position: absolute;
+    width: 100%;
+    
+}
 
+.back_img6 {
+    display: none;
+}
+.teiki_form {
+    width: 90%;
+    margin: 0 5%;
+    top: 400px;
+    position: absolute;
+}
+
+.text {
+    margin-top: 50px;
+    font-size: 200%;
+}
+
+.teiki_form h1 {
+    font-size: 300%;
+}
+/* 
+.teiki_form p {
+    font-size: 200%;
+}
+ */
+.tag1 {
+    width: 40%;
+    font-size: 140%;
+    
+}
+
+.tag2 {
+    width: 80%;
+    font-size: 140%;
+
+}
+
+.tag3 {
+    width: 30%;
+    font-size: 140%;
+
+}
 /* -----------------------------
 FAQ */
 
@@ -574,25 +669,16 @@ news */
 .news_row1 {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     position: relative;
     width: 100%;
     margin-bottom: 10px;
 } 
 
-.news_row2 {
-    display: flex;
-    justify-content: space-between;
-    height: 40px;
-}
 
 .news a {
     width: 18%;
-    /* height: 50px; */
     margin-top: auto;
     margin-bottom: auto;
-    text-align: center;
-    display: inline-block;
 
 }
 
@@ -607,7 +693,6 @@ news */
     height: 100%;
     margin-top: auto;
     margin-bottom: auto;
-    text-align: center;
 }
 
 /* --------------------------------
@@ -638,7 +723,7 @@ news */
 
 .sns_0 {
     position: absolute;
-    right: 0;
+    right: 5%;
     bottom: 20px;
     display: flex;
 }
@@ -650,7 +735,7 @@ news */
     border-radius: 10px;
     color: white;
     border: solid 1px #1DA1F2;
-    align-items: center;   
+    /* align-items: center;    */
     font-size: 150%;
 }
 
